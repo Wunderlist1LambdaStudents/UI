@@ -25,6 +25,11 @@ a{
     .flex(center, flex-start);
     flex-direction: column;
     padding: 2%;
+
+}
+.description{
+    .flex(flex-start, flex-start);
+
 }
 .middle{
     align-items: flex-end;
@@ -34,6 +39,14 @@ a{
     width: 30%;
     img{
         height: 500px;
+    }
+}
+.product{
+    width: 35%;
+    .flex(center, flex-end);
+    img{
+        height: 75%;
+        width: 25%;
     }
 }
 h2{
@@ -52,44 +65,13 @@ h4{
     color: @grey;
     padding:1%;
 }
-footer{
-    background-color: @greenForGo;
-    height: 15vh;
-    width: 100%;
+.creators{
+    margin: auto;
+    width:70%;
     .flex(center, center);
-    .nav-container{
-        width: 100%;
-        .flex(center, center);
-    }
-    nav{
-        width: 25%;
-        .flex(center, center);
-        flex-wrap: wrap;
-        a{
-            color: white;
-            padding: 2%;
-            width: 30%;
-            font-size: 1.2rem;
-            text-align: center;
-        }
-        .social{
-            width: 100%;
-            .flex(center, center);
-            img{
-            height: 100%;
-              width: 15%;
-              padding: 1%;
-              margin: 2%;
-            }
-            
-        }
-        p{
-            text-align: center;
-            width: 100%;
-            .font(1.3rem, @font2);
-            color: @white;
-        }
-    }
+    flex-direction: column;
+
+}
+
     
    
-}

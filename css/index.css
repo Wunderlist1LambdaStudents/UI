@@ -145,7 +145,7 @@ table {
   justify-content: space-between;
   align-items: center;
 }
-#logo {
+#nav-bar #logo {
   display: flex;
   justify-content: justify-content;
   align-items: align-items;
@@ -217,6 +217,11 @@ a {
   flex-direction: column;
   padding: 2%;
 }
+.description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .middle {
   align-items: flex-end;
 }
@@ -225,6 +230,16 @@ a {
 }
 .image img {
   height: 500px;
+}
+.product {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.product img {
+  height: 75%;
+  width: 25%;
 }
 h2 {
   font-size: 3rem;
@@ -245,9 +260,16 @@ h4 {
   color: #646464ff;
   padding: 1%;
 }
+.creators {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 footer {
   background-color: #27ae60ff;
-  height: 15vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -272,6 +294,7 @@ footer nav a {
   width: 30%;
   font-size: 1.2rem;
   text-align: center;
+  margin-top: 3%;
 }
 footer nav .social {
   width: 100%;
@@ -283,7 +306,6 @@ footer nav .social img {
   height: 100%;
   width: 15%;
   padding: 1%;
-  margin: 2%;
 }
 footer nav p {
   text-align: center;
@@ -291,4 +313,5 @@ footer nav p {
   font-size: 1.3rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #000000ff;
+  padding: 2%;
 }
