@@ -11,16 +11,30 @@ a{
 
 .feature{
     .flex();
-    border: 1px dashed grey;
-    margin: 1%;
+    padding: 3%;
+    // width: 80%;
+    margin: auto;
+}
+.second{
+    background-color: @alertAmber;
+    width: 100%;
+    .flex(center, center);
 }
 .text{
     width: 70%;
-    .flex(center, center);
+    .flex(center, flex-start);
     flex-direction: column;
+    padding: 2%;
 }
+.middle{
+    align-items: flex-end;
+}
+
 .image{
     width: 30%;
+    img{
+        height: 500px;
+    }
 }
 h2{
     .font(3rem, @font1);
@@ -37,4 +51,45 @@ h4{
     .font(1.8rem, @font2);
     color: @grey;
     padding:1%;
+}
+footer{
+    background-color: @greenForGo;
+    height: 15vh;
+    width: 100%;
+    .flex(center, center);
+    .nav-container{
+        width: 100%;
+        .flex(center, center);
+    }
+    nav{
+        width: 25%;
+        .flex(center, center);
+        flex-wrap: wrap;
+        a{
+            color: white;
+            padding: 2%;
+            width: 30%;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .social{
+            width: 100%;
+            .flex(center, center);
+            img{
+            height: 100%;
+              width: 15%;
+              padding: 1%;
+              margin: 2%;
+            }
+            
+        }
+        p{
+            text-align: center;
+            width: 100%;
+            .font(1.3rem, @font2);
+            color: @white;
+        }
+    }
+    
+   
 }
