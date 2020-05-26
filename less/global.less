@@ -8,3 +8,33 @@ a{
 *{
     box-sizing: border-box;
 }
+
+.feature{
+    .flex();
+    border: 1px dashed grey;
+    margin: 1%;
+}
+.text{
+    width: 70%;
+    .flex(center, center);
+    flex-direction: column;
+}
+.image{
+    width: 30%;
+}
+h2{
+    .font(3rem, @font1);
+    font-weight: bold;
+    color: @primary;
+    padding: 1%;
+}
+h3{
+    .font(2rem, @font2);
+    color: @grey2;
+    padding: 1%;
+}
+h4{
+    .font(1.8rem, @font2);
+    color: @grey;
+    padding:1%;
+}
