@@ -245,6 +245,36 @@ h4 {
   color: #646464ff;
   padding: 1%;
 }
+#banner {
+  position: relative;
+}
+#banner .btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #1e88e5ff;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 15%;
+  height: 9%;
+}
+#banner .btn a {
+  font-size: 2rem;
+  font-family: 'poppins';
+  font-weight: 600;
+}
+#banner .btn a:hover {
+  color: lightgreen;
+}
+.selected {
+  font-weight: bolder;
+}
 footer {
   background-color: #27ae60ff;
   width: 100%;
