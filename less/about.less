@@ -1,0 +1,48 @@
+
+.head{
+    background-color: paleturquoise;
+    height: 50vh;
+    .flex(center, center);
+    .description{
+        .flex(center, center);
+        text-align: center;
+        h4{
+            color: @grey;
+        }
+    }
+}
+.container{
+    width: 70%;
+    margin: auto;
+    .flex(center, center);
+    text-align: center;
+    padding: 5%;
+    line-height: 3rem;
+    h2{
+        padding: 0%;
+        margin-bottom: 2%;
+    }
+}
+.developers{
+    .flex(space-around, center);
+    flex-direction: column;
+    h2{
+        // border-bottom: 3px solid @grey;
+    }
+    .creators{
+        width: 80%;
+        margin: auto;
+        .flex(space-around, center);
+        flex-wrap: wrap;
+        padding: 5%;
+        .person{
+            width:25%;
+            img{
+                width:100%;
+                height: 350px;
+                border-radius: 70%;
+                border: 15px solid paleturquoise;
+            }
+        }
+    }
+}

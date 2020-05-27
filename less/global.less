@@ -1,0 +1,89 @@
+h1{
+    .font(2rem, 'poppins')
+}
+a{
+    text-decoration: none;
+    .font()
+}
+*{
+    box-sizing: border-box;
+}
+
+.feature{
+    .flex();
+    padding: 3%;
+    // width: 80%;
+    margin: auto;
+}
+.second{
+    background-color: @alertAmber;
+    width: 100%;
+    .flex(center, center);
+}
+.text{
+    width: 70%;
+    .flex(center, flex-start);
+    flex-direction: column;
+    padding: 2%;
+
+}
+
+.middle{
+    align-items: flex-end;
+}
+
+.image{
+    width: 30%;
+    img{
+        height: 500px;
+    }
+}
+
+h2{
+    .font(3rem, @font1);
+    font-weight: bold;
+    color: @primary;
+    padding: 1%;
+}
+h3{
+    .font(2rem, @font2);
+    color: @grey2;
+    padding: 1%;
+}
+h4{
+    .font(1.8rem, @font2);
+    color: @grey;
+    padding:1%;
+}
+
+    
+   #banner{
+       position: relative;
+      
+   }
+#banner .btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: @primary;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 15%;
+    height: 9%;
+    a{
+        .font(2rem, @font1);
+        font-weight: 600;
+    }
+    a:hover{
+        color: lightgreen;
+    }
+  }
+  .selected{
+      font-weight: bolder;
+  }
