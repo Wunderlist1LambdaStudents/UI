@@ -442,11 +442,37 @@ footer nav p {
   flex-wrap: wrap;
   padding: 5%;
 }
+@media (max-width: 480px) {
+  .developers .creators {
+    flex-direction: column;
+    padding: 0%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .developers .creators {
+    flex-direction: column;
+    padding: 0%;
+    align-items: center;
+  }
+}
 .developers .creators .person {
-  width: 25%;
+  width: 350px;
+  height: 350px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .developers .creators .person {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .developers .creators .person {
+    width: 100%;
+  }
 }
 .developers .creators .person img {
-  width: 100%;
+  width: 350px;
   height: 350px;
   border-radius: 70%;
   border: 15px solid paleturquoise;
