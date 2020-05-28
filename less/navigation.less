@@ -1,19 +1,36 @@
 #nav-bar{
     .flex(space-between, center);
+    @media(max-width: @mobile){
+        flex-direction: column;
+
+    }
     #logo{
         .flex();
         align-items: center;
         color: @primary;
         margin-left: 1%;
+        @media(max-width: @mobile){
+            padding: 4%;
+    
+        }
     }
 }
 
 .site-navigation {
     width: 30%;
+    @media(max-width: @mobile){
+        flex-direction: column;
+        width: 40%;
+
+    }
     .flex(space-evenly, center);
     padding: 1%;
     a{
         color: black;
+        @media(max-width: @mobile){
+           padding: 4%;
+           font-size: 1.4rem;;
+        }
     }
 }
 a:hover{
@@ -23,8 +40,18 @@ a:hover{
     width: 20%;
     padding: 1%;
     .flex(space-evenly, center);
+    @media(max-width: @mobile){
+        // flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
     a{
         color: @greenForGo;
+        @media(max-width: @mobile){
+         padding: 3%;
+         font-size: 1.4rem;
+    
+        }
     }
 }
 .banner{

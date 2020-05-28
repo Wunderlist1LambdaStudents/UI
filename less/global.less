@@ -11,6 +11,9 @@ a{
 
 .feature{
     .flex();
+    @media(max-width: @mobile){
+        flex-direction: column;
+    }
     padding: 3%;
     // width: 80%;
     margin: auto;
@@ -19,13 +22,26 @@ a{
     background-color: @alertAmber;
     width: 100%;
     .flex(center, center);
+    @media(max-width: @mobile){
+        flex-direction: column-reverse;
+
+    }
 }
 .text{
     width: 70%;
     .flex(center, flex-start);
     flex-direction: column;
     padding: 2%;
+    @media(max-width: @mobile){
+        width: 100%;
+      
+        // text-align: center;
+        h2, h3, h4{
+            text-align: center;
+            margin: 3% 0%;
+        }
 
+    }
 }
 
 .middle{
@@ -34,6 +50,9 @@ a{
 
 .image{
     width: 30%;
+    @media(max-width: @mobile){
+        width: 100%;
+    }
     img{
         height: 500px;
     }
@@ -76,8 +95,15 @@ h4{
     border-radius: 5px;
     width: 15%;
     height: 9%;
+    @media(max-width: @tablet){
+        width: 50%;
+
+    }
+    @media(max-width: @mobile){
+        width: 70%;
+    }
     a{
-        .font(2rem, @font1);
+        .font(1rem, @font1);
         font-weight: 600;
     }
     a:hover{
